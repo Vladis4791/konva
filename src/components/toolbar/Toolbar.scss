@@ -1,0 +1,38 @@
+.toolbar {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 193, 193);
+    z-index: 10;
+    background: #fff;
+
+    .selectButton {
+        &.active {
+            background: rgb(19, 159, 19);
+            color: #fff;
+        }
+    }
+}
+
+.dropdown {
+    z-index: 100;
+}
+
+.dropdownItem {
+    list-style: none;
+    background: #f9f9f9;
+    padding: 15px 20px;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #dbd6d6;
+    }
+
+    &.active {
+        background: rgb(19, 159, 19);
+        color: #fff;
+    }
+}
